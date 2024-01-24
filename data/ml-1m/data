@@ -1,0 +1,17 @@
+/home/adam/anaconda3/envs/protomf/bin/python /home/adam/PycharmProjects/ProtoMF_baseline/data/ml-1m/movielens_splitter.py
+/home/adam/anaconda3/envs/protomf/lib/python3.9/site-packages/pandas/util/_decorators.py:311: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  return func(*args, **kwargs)
+   1000209 entries    6040 users    3706 items for Original Data
+    575281 entries    6038 users    3533 items for Only Positive Interactions (>= 3.5)
+Records after item pass:  574385
+Records after user pass:  574376
+Records after item pass:  574376
+Records after user pass:  574376
+Exiting...
+    574376 entries    6034 users    3125 items for 5-core filtering
+Splitting the data, temporal ordered - leave-k-out.
+100%|██████████| 6034/6034 [00:00<00:00, 35583.63it/s]
+    562308 entries    6034 users    3125 items for Train Data
+      6034 entries    6034 users    1792 items for Val Data
+      6034 entries    6034 users    1806 items for Test Data
+Saving data to ./
